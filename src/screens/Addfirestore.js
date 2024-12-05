@@ -39,7 +39,7 @@ export default function Addfirestore() {
 				<TextInput
 					multiline={true}
 					onChangeText={(text) => setNewItem({ ...newItem, toDo: text })}
-					placeholder="ToDO Name"
+					placeholder="ToDo Name"
 					style={styles.textInput}
 				></TextInput>
 				<TextInput
@@ -69,29 +69,36 @@ export default function Addfirestore() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: "#dfedfa",
+		backgroundColor: "#f4f4f8", // Soft light gray background
 	},
 	innerContainer: {
-		padding: 15,
-		margin: 15,
+		padding: 20,
+		margin: 20,
 		borderRadius: 15,
 		alignItems: "center",
-		backgroundColor: "#fff",
+		backgroundColor: "#ffffff", // White container
 		shadowOffset: { width: 2, height: 2 },
-		elevation: 20,
-		shadowColor: "#333",
-		shadowOpacity: 0.3,
+		elevation: 10,
+		shadowColor: "#000000", // Black shadow for a cleaner look
+		shadowOpacity: 0.1,
 	},
 	textHeader: {
 		fontWeight: "bold",
-		padding: 20,
+		fontSize: 22, // Larger font size for the header
+		color: "#333333", // Dark gray for readability
+		fontFamily: "Arial", // Font for a modern look
+		marginBottom: 15,
 	},
 	textInput: {
 		width: "90%",
-		padding: 5,
-		marginVertical: 6,
+		padding: 10,
+		marginVertical: 8,
 		borderWidth: 1,
 		borderRadius: 10,
-		borderColor: "red",
+		borderColor: "#007BFF", // Blue border for input fields
+		backgroundColor: "#f9f9f9", // Light gray input background
+		fontSize: 16, // Slightly larger font for input
+		color: "#333333", // Dark text color
+		fontFamily: "Arial", // Font style for inputs
 	},
 });
